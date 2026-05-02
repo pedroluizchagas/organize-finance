@@ -1,0 +1,19 @@
+{
+  "crons": [
+    {
+      "path": "/api/process",
+      "schedule": "*/2 * * * *"
+    }
+  ],
+  "functions": {
+    "app/api/process/route.ts": {
+      "maxDuration": 60
+    },
+    "app/api/ai/categorize/route.ts": {
+      "maxDuration": 60
+    },
+    "app/api/ai/insights/route.ts": {
+      "maxDuration": 60
+    }
+  }
+}
